@@ -1,0 +1,108 @@
+@media print {
+    nav, #about, .heading, .blocks, #ideas, .img-fluid, #contact {
+        display: none
+    }
+
+    .tm-banner-inner {
+        width: 75%;
+        margin: auto
+    }
+
+    h2 {
+        color: blue !important
+    }
+
+    h2 + p {
+        font-style: italic
+    }
+
+    p::first-letter {
+        color: #76cdd7;
+        font-size: 30px
+    }
+
+    .flex-2-col {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    img {
+        width: 50%
+    }
+}
+
+#about .tm-box-bg-title:hover {
+    background: #76cdd7;
+    color: white;
+    font-weight: bold
+}
+
+p:first-letter {
+    color: #87CEFA;
+    font-size: 30px
+}
+
+.tm-banner {
+    border: 1px solid grey
+}
+
+.tm-content-box, .tm-sidebar, .blocks {
+    box-shadow: 1px 1px #999999, 1px -1px #999999
+}
+
+section {
+    position: relative
+}
+
+section::before {
+    position: absolute;
+    content: '';
+    border: 1px solid transparent;
+    border-left-width: 0;
+    border-right-width: 210px;
+    border-top-width: 30px;
+    border-top-color: #87CEFA
+}
+
+.active .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px
+}
+
+h2 + p {
+    font-style: italic
+}
+
+.heading a:visited {
+    text-decoration: underline
+}
+
+.heading a:hover {
+    color: #87CEFA;
+    text-decoration: underline double
+}
+
+.blocks .box:nth-child(even) {
+    background-color: #cdecff
+}
+
+.blocks .box p:first-letter {
+    color: black
+}
+
+.submit-btn {
+    background: 0;
+    color: #87CEFA;
+    border: 1px solid #87CEFA;
+    float: right
+}
+
+.submit-btn:hover {
+    background-color: #87CEFA;
+    color: white
+}
+
+.tm-nav-item:hover {
+    background-color: #dfdfdf
+}
