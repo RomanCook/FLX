@@ -1,0 +1,159 @@
+* {
+  /*  margin: 0;*/
+  padding: 0;
+  font-family: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+
+header {
+  background-image: url("../img/header_background_v1.jpg");
+  height: 700px;
+  background-size: cover; }
+  header .top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    header .top-wrapper img {
+      width: 50%;
+      height: 50%; }
+  header nav {
+    display: flex; }
+    header nav a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      padding: 20px 100px; }
+      header nav a:hover {
+        color: #b4b4b4;
+        text-decoration: underline; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 700px; }
+    header section h1 {
+      text-transform: uppercase;
+      color: white;
+      text-align: center; }
+    header section a {
+      margin-top: 20px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #01acac;
+      background: #01acac;
+      padding: 20px 70px; }
+      header section a:hover {
+        background: #01dfdf; }
+
+main {
+  margin: 20px auto;
+  width: 960px; }
+  main .toolbar {
+    display: flex;
+    justify-content: flex-end; }
+    main .toolbar input {
+      outline: none;
+      padding: 10px;
+      border: 1px solid #607d8b; }
+  main .post-list {
+    padding: 20px 0;
+    position: relative; }
+    main .post-list h1 {
+      text-transform: uppercase;
+      text-align: right;
+      color: black; }
+  main article {
+    background-color: #efefef;
+    display: flex;
+    padding: 10px; }
+    main article > div {
+      text-align: right;
+      padding-left: 10px; }
+      main article > div .post {
+        text-align: left; }
+        main article > div .post .post-description {
+          color: red;
+          padding: 10px 10px;
+          border-bottom: 1px solid #607d8b; }
+        main article > div .post h3 {
+          color: #0097a7;
+          text-transform: uppercase;
+          margin-top: 10px; }
+        main article > div .post p {
+          color: black;
+          margin-top: 10px; }
+      main article > div button {
+        color: white;
+        text-transform: uppercase;
+        outline: none;
+        background: #01acac;
+        padding: 10px 60px;
+        border-color: #01acac; }
+  main .about {
+    padding-top: 20px; }
+    main .about h1 {
+      text-align: right;
+      text-transform: uppercase;
+      color: black; }
+    main .about p {
+      color: black;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    main .about img {
+      padding-top: 10px;
+      width: 100%;
+      height: 100%; }
+  main .contact-form {
+    padding-top: 50px; }
+    main .contact-form h1 {
+      text-align: right; }
+    main .contact-form h4 {
+      text-align: right;
+      text-transform: uppercase; }
+    main .contact-form form {
+      padding-top: 10px;
+      color: #0097bb; }
+      main .contact-form form .contact-form {
+        display: flex;
+        margin-bottom: 20px; }
+        main .contact-form form .contact-form .input {
+          width: 50%;
+          margin: 0 5px; }
+          main .contact-form form .contact-form .input label {
+            display: block;
+            text-align: right; }
+          main .contact-form form .contact-form .input input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid black;
+            outline: none; }
+        main .contact-form form .contact-form .textarea {
+          width: 100%; }
+          main .contact-form form .contact-form .textarea label {
+            display: block;
+            text-align: right; }
+          main .contact-form form .contact-form .textarea textarea {
+            width: 100%;
+            height: 150px; }
+      main .contact-form form .button {
+        display: flex;
+        justify-content: flex-end; }
+        main .contact-form form .button button {
+          color: white;
+          text-transform: uppercase;
+          outline: none;
+          background: #01acac;
+          padding: 10px 60px;
+          border-color: #01acac; }
+
+footer {
+  padding-bottom: 20px;
+  padding-left: 20px; }
+
+/*# sourceMappingURL=style1.css.map */
