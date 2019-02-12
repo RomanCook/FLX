@@ -1,7 +1,7 @@
 function reverseNumber(a) {
     let sign = 0 - a;
     let reverseNum = '';
-    const a_string = Math.abs(a).toString();
+    const a_string = a + "";
     for (let i = 0; i < a_string.length; i++) {
         reverseNum = a_string[i] + reverseNum;
     }
