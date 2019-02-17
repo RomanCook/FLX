@@ -1,14 +1,7 @@
-function findTypes(...rest) {
-    let tipes = [], currentype;
-    for (let i = 0; i < rest.length; i++) {
-        if (arguments[i] * 2 === 0 && !arguments[i]) {
-            currentype = 'object';
-        } else if (Math.abs(0 - arguments[i]) === Math.abs(arguments[i])) {
-            currentype = 'number';
-        } else if (arguments[i].length > 0) {
-            currentype = 'string';
-        }
-        tipes.push(currentype);
+function findTypes() {
+    let tipes = [];
+    for (let i = 0; i < arguments.length; i++) {
+        tipes.push(typeof (arguments[i]));
     }
     console.log(tipes);
 }
@@ -16,13 +9,15 @@ function findTypes(...rest) {
 findTypes(null, 5, 'hello');
 
 
-function executeforEach(...rest) {
-    for (let i = 0; i < rest.length; i++) {
-        console.log(arguments[i]);
+function executeforEach(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        callback(arguments[i]);
     }
 }
 
-executeforEach(1, 2, 3);
+executeforEach([1, 2, 3], function (el) {
+    console.log(el);
+});
 
 
 function mapArray(...rest) {
@@ -143,11 +138,7 @@ showFormattedDate(new Date('2019-01-27T01:10:00'));
 
 function isEvenYear(yourdate) {
     let year = yourdate.getFullYear();
-    if (year % 2) {
-        console.log('False');
-    } else {
-        console.log('True');
-    }
+    console.log(year % 2 === 0);
 }
 
 isEvenYear(new Date('2019-01-27T01:10:00'));
@@ -155,11 +146,7 @@ isEvenYear(new Date('2019-01-27T01:10:00'));
 
 function isEvenMonth(yourdate) {
     let month = yourdate.getMonth() + 1;
-    if (month % 2) {
-        console.log('False');
-    } else {
-        console.log('True');
-    }
+    console.log(month % 2 === 0);
 }
 
 isEvenMonth(new Date('2019-02-27T01:10:00'));
